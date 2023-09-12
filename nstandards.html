@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>あなたのNスタンダード進捗度</title>
+    <link rel="stylesheet" href="nstandards.css">
+    <script src="nstandards.js"></script>
+</head>
+
+<body>
+    <h1>あなたのNスタンダード進捗度</h1>
+    <div class="container">
+        <div class="content">
+            <div class="grid-container">
+                <div id="progress1" class="progress">挨拶</div>
+                <div id="progress2" class="progress">協働</div>
+                <div id="progress3" class="progress">主体性</div>
+                <div id="progress4" class="progress">寛容さ</div>
+                <div id="progress5" class="progress">挑戦</div>
+                <div id="progress6" class="progress">感謝</div>
+                <div id="progress7" class="progress">素直さ</div>
+                <div id="progress8" class="progress">柔軟性</div>
+                <div id="progress9" class="progress">貫徹</div>
+                <div id="progress10" class="progress">向上心</div>
+                <div id="progress11" class="progress">心身</div>
+                <div id="progress12" class="progress">継続力</div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <form>
+                <label for="progress-input-1">挨拶</label>
+                <select id="progress-input-1" onchange="updateProgress(this)"><option value="0">0%</option><option value="10">10%</option><option value="20">20%</option><option value="30">30%</option><option value="40">40%</option><option value="50">50%</option><option value="60">60%</option><option value="70">70%</option><option value="80">80%</option><option value="90">90%</option><option value="100">100%</option></select>
+                <label for="progress-input-2">協働</label>
+                <select id="progress-input-2" onchange="updateProgress(this)"><option value="0">0%</option><option value="10">10%</option><option value="20">20%</option><option value="30">30%</option><option value="40">40%</option><option value="50">50%</option><option value="60">60%</option><option value="70">70%</option><option value="80">80%</option><option value="90">90%</option><option value="100">100%</option></select>
+                <label for="progress-input-3">主体性</label>
+                <select id="progress-input-3" onchange="updateProgress(this)"><option value="0">0%</option><option value="10">10%</option><option value="20">20%</option><option value="30">30%</option><option value="40">40%</option><option value="50">50%</option><option value="60">60%</option><option value="70">70%</option><option value="80">80%</option><option value="90">90%</option><option value="100">100%</option></select>
+                <label for="progress-input-4">寛容さ</label>
+                <select id="progress-input-4" onchange="updateProgress(this)"><option value="0">0%</option><option value="10">10%</option><option value="20">20%</option><option value="30">30%</option><option value="40">40%</option><option value="50">50%</option><option value="60">60%</option><option value="70">70%</option><option value="80">80%</option><option value="90">90%</option><option value="100">100%</option></select>
+                <label for="progress-input-5">挑戦</label>
+                <select id="progress-input-5" onchange="updateProgress(this)"><option value="0">0%</option><option value="10">10%</option><option value="20">20%</option><option value="30">30%</option><option value="40">40%</option><option value="50">50%</option><option value="60">60%</option><option value="70">70%</option><option value="80">80%</option><option value="90">90%</option><option value="100">100%</option></select>
+                <label for="progress-input-6">感謝</label>
+                <select id="progress-input-6" onchange="updateProgress(this)"><option value="0">0%</option><option value="10">10%</option><option value="20">20%</option><option value="30">30%</option><option value="40">40%</option><option value="50">50%</option><option value="60">60%</option><option value="70">70%</option><option value="80">80%</option><option value="90">90%</option><option value="100">100%</option></select>
+                <label for="progress-input-7">素直さ</label>
+                <select id="progress-input-7" onchange="updateProgress(this)"><option value="0">0%</option><option value="10">10%</option><option value="20">20%</option><option value="30">30%</option><option value="40">40%</option><option value="50">50%</option><option value="60">60%</option><option value="70">70%</option><option value="80">80%</option><option value="90">90%</option><option value="100">100%</option></select>
+                <label for="progress-input-8">柔軟性</label>
+                <select id="progress-input-8" onchange="updateProgress(this)"><option value="0">0%</option><option value="10">10%</option><option value="20">20%</option><option value="30">30%</option><option value="40">40%</option><option value="50">50%</option><option value="60">60%</option><option value="70">70%</option><option value="80">80%</option><option value="90">90%</option><option value="100">100%</option></select>
+                <label for="progress-input-9">貫徹</label>
+                <select id="progress-input-9" onchange="updateProgress(this)"><option value="0">0%</option><option value="10">10%</option><option value="20">20%</option><option value="30">30%</option><option value="40">40%</option><option value="50">50%</option><option value="60">60%</option><option value="70">70%</option><option value="80">80%</option><option value="90">90%</option><option value="100">100%</option></select>
+                <label for="progress-input-10">向上心</label>
+                <select id="progress-input-10" onchange="updateProgress(this)"><option value="0">0%</option><option value="10">10%</option><option value="20">20%</option><option value="30">30%</option><option value="40">40%</option><option value="50">50%</option><option value="60">60%</option><option value="70">70%</option><option value="80">80%</option><option value="90">90%</option><option value="100">100%</option></select>
+                <label for="progress-input-11">心身</label>
+                <select id="progress-input-11" onchange="updateProgress(this)"><option value="0">0%</option><option value="10">10%</option><option value="20">20%</option><option value="30">30%</option><option value="40">40%</option><option value="50">50%</option><option value="60">60%</option><option value="70">70%</option><option value="80">80%</option><option value="90">90%</option><option value="100">100%</option></select>
+                <label for="progress-input-12">継続力</label>
+                <select id="progress-input-12" onchange="updateProgress(this)"><option value="0">0%</option><option value="10">10%</option><option value="20">20%</option><option value="30">30%</option><option value="40">40%</option><option value="50">50%</option><option value="60">60%</option><option value="70">70%</option><option value="80">80%</option><option value="90">90%</option><option value="100">100%</option></select>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
